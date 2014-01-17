@@ -1497,8 +1497,10 @@ h2 { margin-bottom: 8px; }
 /* line 81, ../../dev/sass/main.scss */
 [class^="layout-"] .block, [class*=" layout-"] .block { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; vertical-align: top; }
 
+/* line 1, ../../dev/sass/_header.scss */
+.header { padding-top: 6px; background-color: rgba(0, 0, 0, 0.1); }
 /* line 5, ../../dev/sass/_header.scss */
-.header .logo { display: block; width: 100%; height: 0; background: transparent url(../img/logo.svg) no-repeat scroll center center; background-size: contain; padding-top: 42%; }
+.header .logo { display: block; width: 100%; height: 0; padding-top: 42%; }
 @media only screen and (min-width: 30em) { /* line 5, ../../dev/sass/_header.scss */
   .header .logo { padding-top: 21%; } }
 @media only screen and (min-width: 48em) { /* line 5, ../../dev/sass/_header.scss */
