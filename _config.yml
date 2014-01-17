@@ -9,7 +9,7 @@ navigation:
   url: /team/
 - text: work
   url: /work/
-- text: blog
+- text: news
   url: /blog/  
 - text: contact
   url: /contact/  
