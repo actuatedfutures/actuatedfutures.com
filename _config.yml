@@ -1,4 +1,15 @@
 name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
-url: http://localhost:9000
+url: http://192.168.1.79:9000
+navigation:
+- text: about
+  url: /
+- text: team
+  url: /team/
+- text: work
+  url: /work/
+- text: blog
+  url: /blog/  
+- text: contact
+  url: /contact/  

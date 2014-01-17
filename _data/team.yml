@@ -1,0 +1,29 @@
+- name: Paul Connel
+  twitter: apulc
+  image: "http://placekitten.com/200/200"
+  bio: "This is my <i>bio</i> which is a paragraph of information about which I don't know nothing mistker banks."
+
+- name: Chris Thompson
+  twitter: christom
+  image: "http://placekitten.com/230/230"
+  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis auctor feugiat. Maecenas imperdietnuncquis nisi eleifend, ut scelerisque turpis laoreet."
+
+- name: Matt Edgar
+  twitter: mattedgar
+  image: "http://placekitten.com/250/250"
+  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis auctor feugiat. Maecenas imperdietnuncquis nisi eleifend, ut scelerisque turpis laoreet."
+
+- name: Fraser Stride
+  twitter: fraserstride
+  image: "http://placekitten.com/270/270"
+  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis auctor feugiat. Maecenas imperdietnuncquis nisi eleifend, ut scelerisque turpis laoreet."
+
+- name: Phil Jefferies
+  twitter: fraserstride
+  image: "http://placekitten.com/203/203"
+  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis auctor feugiat. Maecenas imperdietnuncquis nisi eleifend, ut scelerisque turpis laoreet."
+
+- name: Tom Morgan
+  twitter: morganesque
+  image: "http://placekitten.com/201/201"
+  bio: "Lorem ipsum dolor sit amet consectetur adipiscing elit Sed venenatis auctor feugiat. Maecenas imperdiet nuncquis nisi eleifend, ut scelerisque turpis laoreet."

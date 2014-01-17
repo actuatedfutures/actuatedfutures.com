@@ -2,3 +2,16 @@
 layout: default
 title: About The Team
 ---
+
+{% for member in site.data.team %}
+<div class="layout--trio {% cycle '','rev' %}">	
+	<div class="block text first">
+ 		<h2 class="less">{{ member.name }}</h2>
+ 		<p>{{ member.bio }}</p>
+ 	</div><!-- 
+ --><div class="block square">
+		<img src="{{member.image}}" width="100%" class="res-image" />
+	</div><!--
+ --><div class="block text second"></div>
+</div>
+{% endfor %}

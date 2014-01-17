@@ -1,0 +1,24 @@
+<header class="header">
+	<div class="logo"></div>
+	<h1 class="name">
+		<span class="names name--one">actuated</span><!-- 
+		--><span class="names name--two">futures</span>
+	</h1><!-- .name -->
+</header>
+
+<nav class="topnav" id="showmenu">
+	<ul class="nav">
+		<li class="control menu"><a href="#showmenu">menu<span class="icon-arrow-down icon-right"></span></a></li>
+		<li class="control hide"><a href="#hidemenu">hide<span class="icon-arrow-up icon-right"></span></a></li>
+		{% for link in site.navigation %}
+	    	{% assign current = nil %}
+	    	{% capture url %}{{ page.url | remove:'index.html' }}{% endcapture %}
+	      	{% if url == link.url %}
+	        	{% assign current = 'current' %}
+	      	{% endif %}
+	    <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+	        <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+	    </li>
+	    {% endfor %}
+   </ul>
+</nav>

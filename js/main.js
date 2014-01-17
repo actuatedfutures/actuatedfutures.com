@@ -1,1 +1,1 @@
-$(document).on("ready",function(){alert("fish")});
+$(document).on("ready",function(){var a=$(document).width();$(".debug").text(a)});
