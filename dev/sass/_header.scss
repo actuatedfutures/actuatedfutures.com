@@ -1,0 +1,81 @@
+.header {
+	// padding-top:$bsu/4;
+	// background-color:rgba(black,0.1);		
+
+	.logo {
+		display:block;		
+		width:100%;
+		height:0;		
+		background:transparent url(../img/logo.svg) no-repeat scroll center center;
+		background-size:contain;		
+		padding-top:42%;
+		@include above(pem(480)){padding-top:21%;}
+		@include above(pem(768)){padding-top:16%;}
+	}
+}
+
+.name {
+	text-transform:uppercase;
+	text-align:center;
+	font-size:3em;
+	font-weight:normal;
+	line-height:1;
+
+	// actuated is bold
+	.name--one {font-weight:$font-bold;font-size:0.9em;margin-top:0.05em}
+
+	// split up the words for wrapping under 480px.
+	@include below(pem(480)) {.names:before {content:' ';display:inline;}}
+
+	@include above(pem(480))
+	{
+		$gap:30%;
+		position:absolute;
+		top:0;left:0;
+		width:100%;
+		font-size:2em;
+		margin-top:12%;
+
+		.names {
+			@include inline-block();
+			width:(100%-$gap)/2;
+		}
+		.name--one {
+			margin-right:$gap;
+			text-align:right;
+		}
+		.name--two {
+			text-align:left;
+		}	
+	}
+
+	@include above(pem(768))
+	{
+		font-size:3em;
+
+		$gap:25%;
+		margin-top:7%;
+
+		.names {
+			width:(100%-$gap)/2;
+		}
+		.name--one {
+			margin-right:$gap;
+		}
+	}
+
+	@include above(pem(1024))
+	{
+		font-size:4em;
+
+		$gap:25%;
+		margin-top:7%;
+
+		.names {
+			width:(100%-$gap)/2;
+		}
+		.name--one {
+			margin-right:$gap;
+		}
+	}
+}

@@ -1,0 +1,100 @@
+// import all the lovely compass.
+@import "compass/css3/inline-block";
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+
+// include normalize.
+@import "normalize-css/normalize";
+
+// vars for inuit.
+$use-nav:true;
+$use-grid:true;
+$base-line-height:24px;
+$bsu:$base-line-height;
+
+// then grab inuit.
+@import "inuit.css/inuit";
+
+// now my own personal mixins.
+@import "mixins"; 
+
+// and an icon font (love these).
+@import "iconfont";
+
+// set up some useful normal/bold weights (just in case your webfont uses different values).
+$font-normal:300;
+$font-bold:700;
+
+body {
+	font-family: "Exo 2", sans-serif;
+	font-weight: $font-normal;
+	margin:$bsu/2;
+
+	@include above(pem(500))
+	{
+		margin:$bsu;
+	}
+
+	b,strong {
+		font-weight:$font-bold;
+	}
+
+	@include above(pem(1025))
+	{
+		font-size:20px; 
+	}
+}	
+
+h2 {
+	margin-bottom:$bsu/3;
+}
+
+.text {
+	h2 {
+		font-size:2.5em;
+		line-height:1em;
+		margin-bottom:1.2em;
+		&.less {
+			margin-bottom:0.25em;
+		}
+	}
+	h3 {
+		font-size:1.5em;
+		line-height:1.2;
+		margin-bottom:2em;
+	}
+	p {
+		margin-bottom:1.5em;
+	}
+}
+
+.footer {
+	margin-top:1.5em;
+	background-color:rgba(black,0.22);
+	height:300px;	
+}
+
+.res-image {display:block;}
+
+[class^="layout-"], [class*=" layout-"] {
+
+	.block {
+		@include inline-block();
+		vertical-align:top;
+	}
+}
+
+@import "header";
+@import "nav";
+@import "layout-duo";
+@import "layout-trio";
+
+
+
+
+
+.debug {
+	position:absolute;
+	bottom:0;right:0;
+	margin:0 0.25em 0.25em 0;
+}

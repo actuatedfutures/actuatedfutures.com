@@ -1,0 +1,32 @@
+.layout--duo {
+	
+	&.rev {direction:rtl;} 
+
+	.square {
+
+		@include above(pem(500))
+		{
+			width:38%;			
+			margin-bottom:0;
+			padding:0 0 0 $bsu;
+		}
+	}
+
+	&.rev .square {
+		@include above(pem(500))
+		{
+			padding:0 $bsu 0 0;
+		}
+	}
+
+	.text {
+		direction:ltr;
+		margin-bottom:$bsu;
+
+		@include above(pem(500))
+		{
+			margin-bottom:0;
+			width:62%;	
+		}
+	}
+}

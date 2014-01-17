@@ -1,0 +1,93 @@
+.topnav {
+	margin-top:$bsu;
+	font-size:1.25em;
+	text-transform:uppercase;	
+
+	@include above(pem(1024))
+	{
+		margin-bottom:1.2em;
+	}	
+
+	// bg color on whole block (not individual items.)
+	.nav {
+		// background-color:rgba(black,1);
+		height:100%;
+	}
+
+	// each link
+	li {
+		width:100%;
+		a {
+			width:100%;
+			text-align:center;
+			text-decoration:none;
+			padding:0.5em;
+			border-bottom:1px solid white;			
+			color:white;
+			background-color:black;
+		}
+
+		&.current a {
+			background-color:white;
+			color:black;
+			box-shadow:0px 1px 0px 0px rgba(black,0.42) inset;
+		}
+		
+		&:last-child a {border:none}
+
+		&.control a {
+			background-color:rgba(black,0.42);
+		}
+	}
+
+	// start with the hide button ... hidden.
+	.control.hide {
+		display:none;
+	}
+	
+	// mobile – control the hide/show of the menu
+	@include below(pem(481))
+	{
+		overflow:hidden;
+		max-height:51px;
+		@include single-transition(max-height 1s ease-out);
+
+		&:target {
+			max-height:400px;
+			.menu {
+				display:none;
+			}
+			.hide {
+				display:block;
+			}
+		}	
+		margin-bottom:$bsu;
+	}
+	
+	// above mobile – display as fill width link string.
+	@include above(pem(480))
+	{		
+		margin-top:0;
+		.control {display:none}
+		.nav {
+			display:table;
+			width:100%;
+		}
+		li {
+			display:table-cell;
+			width:auto;
+			a {
+				border:none;				
+				// @include single-transition(all 0.1s ease-out);
+				// border-right:1px solid rgba(white,0.42);		
+				&:hover {
+					background-color:rgba(black,0.42);
+					color:black;
+					box-shadow:0px 1px 0px 0px rgba(black,0.42) inset;
+				}
+			}
+		}
+	}
+
+	
+}

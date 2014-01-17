@@ -1,0 +1,45 @@
+.layout--trio {
+
+	margin-bottom:$bsu;
+	
+	// .first {text-align:right}
+	// .second {text-align:left}
+
+	.text,.square {width:100%;}
+
+	&.rev {
+		direction:rtl;
+		.text,.square {direction:ltr;}
+		// .first {text-align:left}
+		// .second {text-align:left}
+	}
+
+	@include above(pem(500))
+	{
+		.first  {width:76%; padding:0 $bsu 0 0;text-align:right}
+		.second {width:0%; padding:0 0 0 0;}
+		.square {width:24%}
+
+		&.rev {			
+			.first {padding:0 0 0 $bsu;text-align:left}
+			.second {padding:0 0 0 0;}
+		}
+	}	
+
+	@include above(pem(768))
+	{
+		.first  {width:52%;}
+		.second {width:14%; padding:0 0 0 $bsu;}
+		.square {width:24%}
+
+		&.rev {			
+			.second {padding:0 $bsu 0 0;}
+		}
+	}	
+
+	@include above(pem(1280))
+	{
+		.square {width:24%}
+		.text {width:38%}
+	}	
+}
