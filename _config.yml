@@ -10,6 +10,6 @@ navigation:
 - text: work
   url: /work/
 - text: news
-  url: /blog/  
+  url: /news/  
 - text: contact
   url: /contact/  
