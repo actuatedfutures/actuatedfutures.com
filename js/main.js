@@ -1,1 +1,1 @@
-$(document).on("ready",function(){var a=$(document).width();$(".debug").text(a)});
+$(document).on("ready",function(){var a=$(document).width();$(".debug").text(a);var b=$("#showmenu");b.find(".menu").on("click",function(a){a.preventDefault(),b.addClass("show")}),b.find(".hide").on("click",function(a){a.preventDefault(),b.removeClass("show")})});

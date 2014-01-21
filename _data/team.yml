@@ -11,7 +11,8 @@
 - name: Matt Edgar
   twitter: mattedgar
   image: "http://placekitten.com/250/250"
-  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis auctor feugiat. Maecenas imperdietnuncquis nisi eleifend, ut scelerisque turpis laoreet."
+  bio: "Matt is a consultant in service design, innovation and product management. For more than 15 years he worked in product strategy and design leadership in the amazing world of web and mobile media. Before that he was a newspaper journalist and history student."
+  link: "http://mattedgar.com/"
 
 - name: Fraser Stride
   twitter: fraserstride
@@ -26,4 +27,5 @@
 - name: Tom Morgan
   twitter: morganesque
   image: "http://placekitten.com/201/201"
-  bio: "Lorem ipsum dolor sit amet consectetur adipiscing elit Sed venenatis auctor feugiat. Maecenas imperdiet nuncquis nisi eleifend, ut scelerisque turpis laoreet."
+  bio: "Tom is a quite good interaction designer and front-end developer. He's been designing and building things for the web since the turn of the century and is a passionate advocate of user-centered, iterative design practises and more recently responsive web design."
+  link: "http://morganesque.com/"
