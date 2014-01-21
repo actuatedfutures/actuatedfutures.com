@@ -1624,7 +1624,7 @@ h2 { margin-bottom: 8px; }
 /* line 1, ../../dev/sass/_header.scss */
 .header { padding-top: 6px; }
 /* line 5, ../../dev/sass/_header.scss */
-.header .logo { width: 60%; margin: 0 auto; background: -webkit-gradient(radial, 50% 10%, 0, 50% 10%, 100, color-stop(0%, #00a5cc), color-stop(100%, #2e5b66)); background: -webkit-radial-gradient(50% 10%, 100% 90%, #00a5cc, #2e5b66); background: -moz-radial-gradient(50% 10%, 100% 90%, #00a5cc, #2e5b66); background: -o-radial-gradient(50% 10%, 100% 90%, #00a5cc, #2e5b66); background: radial-gradient(50% 10%, 100% 90%, #00a5cc, #2e5b66); }
+.header .logo { width: 60%; margin: 0 auto; }
 @media only screen and (min-width: 30em) { /* line 5, ../../dev/sass/_header.scss */
   .header .logo { width: 25%; } }
 @media only screen and (min-width: 48em) { /* line 5, ../../dev/sass/_header.scss */
