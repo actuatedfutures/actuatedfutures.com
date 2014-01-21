@@ -420,7 +420,7 @@ label, input, textarea, button, select, option { cursor: pointer; }
 \*------------------------------------*/
 /** Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php Extend the clearfix class with Sass to avoid the `.cf` class appearing over and over in your markup. */
 /* line 10, ../../bower_components/inuit.css/generic/_clearfix.scss */
-.cf:after, .nav:after { content: ""; display: table; clear: both; }
+.cf:after, .nav:after, .footer .wrap:after { content: ""; display: table; clear: both; }
 
 /*------------------------------------*\ $SHARED
 \*------------------------------------*/
@@ -785,6 +785,27 @@ label, .label { display: block; }
 .text-input:active + .extra-help, .text-input:focus + .extra-help { visibility: visible; }
 
 /** Objects and abstractions */
+/*------------------------------------*\ $GRIDS
+\*------------------------------------*/
+/** Fluid and nestable grid system, e.g.:  <div class="grid">
+ <div class="grid__item  one-third"> <p>One third grid</p> </div><!--
+ --><div class="grid__item  two-thirds"> <p>Two thirds grid</p> </div><!--
+ --><div class="grid__item  one-half"> <p>One half grid</p> </div><!--
+ --><div class="grid__item  one-quarter"> <p>One quarter grid</p> </div><!--
+ --><div class="grid__item  one-quarter"> <p>One quarter grid</p> </div>
+ </div>  Demo: jsfiddle.net/inuitcss/CLYUC  */
+/** Grid wrapper */
+/* line 41, ../../bower_components/inuit.css/objects/_grids.scss */
+.grid { margin-left: -24px; list-style: none; margin-bottom: 0; }
+
+/** Very infrequently occuring grid wrappers as children of grid wrappers. */
+/* line 51, ../../bower_components/inuit.css/objects/_grids.scss */
+.grid > .grid { margin-left: 0; }
+
+/** Grid */
+/* line 59, ../../bower_components/inuit.css/objects/_grids.scss */
+.grid__item { display: inline-block; width: 100%; padding-left: 24px; vertical-align: top; }
+
 /*------------------------------------*\ $NAV
 \*------------------------------------*/
 /** Nav abstraction as per: csswizardry.com/2011/09/the-nav-abstraction When used on an `ol` or `ul`, this class throws the list into horizontal mode e.g.:  <ul class=nav> <li><a href=#>Home</a></li> <li><a href=#>About</a></li> <li><a href=#>Portfolio</a></li> <li><a href=#>Contact</a></li> </ul>  Demo: jsfiddle.net/inuitcss/Vnph4  */
@@ -1441,31 +1462,37 @@ label, .label { display: block; }
 @font-face { font-family: 'iconfont'; src: url("fonts/iconfont.eot"); src: url("fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("fonts/iconfont.woff") format("woff"), url("fonts/iconfont.ttf") format("truetype"), url("fonts/iconfont.svg#iconfont") format("svg"); font-weight: normal; font-style: normal; }
 
 /* line 12, ../../dev/sass/_iconfont.scss */
-[class^="icon-"], [class*=" icon-"] { font-family: 'iconfont'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; position: relative; top: 0.1em; }
+[class^="icon-"], [class*=" icon-"] { font-family: 'iconfont'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-/* line 29, ../../dev/sass/_iconfont.scss */
-.icon-left { margin-right: 0.25em; }
-
-/* line 32, ../../dev/sass/_iconfont.scss */
-.icon-right { margin-left: 0.25em; }
-
-/* line 35, ../../dev/sass/_iconfont.scss */
+/* line 26, ../../dev/sass/_iconfont.scss */
 .icon-home:before { content: "\e600"; }
 
-/* line 38, ../../dev/sass/_iconfont.scss */
+/* line 29, ../../dev/sass/_iconfont.scss */
 .icon-arrow-down:before { content: "\e601"; }
 
-/* line 41, ../../dev/sass/_iconfont.scss */
+/* line 32, ../../dev/sass/_iconfont.scss */
 .icon-arrow-up:before { content: "\e602"; }
 
-/* line 44, ../../dev/sass/_iconfont.scss */
+/* line 35, ../../dev/sass/_iconfont.scss */
 .icon-arrow-right:before { content: "\e603"; }
 
-/* line 47, ../../dev/sass/_iconfont.scss */
+/* line 38, ../../dev/sass/_iconfont.scss */
 .icon-arrow-left:before { content: "\e604"; }
 
-/* line 50, ../../dev/sass/_iconfont.scss */
+/* line 41, ../../dev/sass/_iconfont.scss */
 .icon-menu:before { content: "\e605"; }
+
+/* line 44, ../../dev/sass/_iconfont.scss */
+.icon-twitter:before { content: "\e606"; }
+
+/* line 47, ../../dev/sass/_iconfont.scss */
+.icon-mail:before { content: "\e607"; }
+
+/* line 50, ../../dev/sass/_iconfont.scss */
+.icon-github:before { content: "\e608"; }
+
+/* line 53, ../../dev/sass/_iconfont.scss */
+.icon-phone:before { content: "\e609"; }
 
 /* line 9, ../../dev/sass/_colours.scss */
 .t-red, a:hover, .topnav li.current a { color: #ff005f; }
@@ -1515,7 +1542,7 @@ svg path.blue { fill: #00a5cc; }
 .t-grey .rule, body .rule { color: #2e5b66; }
 
 /* line 19, ../../dev/sass/_colours.scss */
-.bg-grey, .footer, .topnav { background-color: #2e5b66; }
+.bg-grey, .footer { background-color: #2e5b66; }
 
 /* line 22, ../../dev/sass/_colours.scss */
 svg text.grey { fill: #2e5b66; }
@@ -1548,11 +1575,11 @@ svg path.maroon { fill: #9e0039; }
 .bd-maroon { border-color: #9e0039; }
 
 /* line 9, ../../dev/sass/_colours.scss */
-.t-white { color: white; }
+.t-white, .footer { color: white; }
 /* line 12, ../../dev/sass/_colours.scss */
-.t-white:link, .t-white:visited { color: white; }
+.t-white:link, .footer:link, .t-white:visited, .footer:visited { color: white; }
 /* line 14, ../../dev/sass/_colours.scss */
-.t-white .rule { color: white; }
+.t-white .rule, .footer .rule { color: white; }
 
 /* line 19, ../../dev/sass/_colours.scss */
 .bg-white { background-color: white; }
@@ -1607,24 +1634,31 @@ h2 { margin-bottom: 8px; }
 .text p { margin-bottom: 1.5em; }
 
 /* line 76, ../../dev/sass/main.scss */
-.footer { margin-top: 1.5em; height: 300px; }
-
-/* line 82, ../../dev/sass/main.scss */
 .res-image { display: block; }
 
+/* line 78, ../../dev/sass/main.scss */
+[class^="icon-"], [class*=" icon-"] { position: relative; top: 2px; margin: 0 0.5em 0 0; }
 /* line 84, ../../dev/sass/main.scss */
+[class^="icon-"].icon-right, [class*=" icon-"].icon-right { margin: 0 0 0 0.5em; }
+
+/* line 89, ../../dev/sass/main.scss */
 [class^="layout-"], [class*=" layout-"] { margin: 0 12px; max-width: 1042px; }
-@media only screen and (min-width: 30em) { /* line 84, ../../dev/sass/main.scss */
+@media only screen and (min-width: 30em) { /* line 89, ../../dev/sass/main.scss */
   [class^="layout-"], [class*=" layout-"] { margin: 0 24px; } }
-@media only screen and (min-width: 64em) { /* line 84, ../../dev/sass/main.scss */
+@media only screen and (min-width: 64em) { /* line 89, ../../dev/sass/main.scss */
   [class^="layout-"], [class*=" layout-"] { margin: 0 auto; } }
-/* line 96, ../../dev/sass/main.scss */
+/* line 101, ../../dev/sass/main.scss */
 [class^="layout-"] .block, [class*=" layout-"] .block { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; vertical-align: top; }
+
+/* line 107, ../../dev/sass/main.scss */
+.cityback, .topnav, .footer { background: #2e5b66 url("../img/city-background.jpg") no-repeat fixed top center; background-size: cover; }
 
 /* line 1, ../../dev/sass/_header.scss */
 .header { padding-top: 6px; }
 /* line 5, ../../dev/sass/_header.scss */
-.header .logo { width: 60%; margin: 0 auto; }
+.header .logo { width: 70%; margin: 0 auto; }
+@media only screen and (max-width: 30em) { /* line 5, ../../dev/sass/_header.scss */
+  .header .logo { max-width: 220px; } }
 @media only screen and (min-width: 30em) { /* line 5, ../../dev/sass/_header.scss */
   .header .logo { width: 25%; } }
 @media only screen and (min-width: 48em) { /* line 5, ../../dev/sass/_header.scss */
@@ -1632,31 +1666,33 @@ h2 { margin-bottom: 8px; }
 @media only screen and (min-width: 64em) { /* line 5, ../../dev/sass/_header.scss */
   .header .logo { width: 15%; } }
 
-/* line 19, ../../dev/sass/_header.scss */
+/* line 20, ../../dev/sass/_header.scss */
 .name { text-transform: uppercase; text-align: center; font-size: 3em; font-weight: normal; line-height: 1; }
-/* line 27, ../../dev/sass/_header.scss */
-.name .name--one { font-weight: 700; font-size: 0.9em; margin-top: 0.05em; }
-@media only screen and (max-width: 30em) { /* line 30, ../../dev/sass/_header.scss */
+/* line 28, ../../dev/sass/_header.scss */
+.name .name--one { font-weight: 700; font-size: 0.95em; margin-top: 0.05em; }
+/* line 29, ../../dev/sass/_header.scss */
+.name .name--two { font-size: 1.15em; }
+@media only screen and (max-width: 30em) { /* line 32, ../../dev/sass/_header.scss */
   .name .names:before { content: ' '; display: inline; } }
-@media only screen and (min-width: 30em) { /* line 19, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 30em) { /* line 20, ../../dev/sass/_header.scss */
   .name { position: absolute; top: 0; left: 0; width: 100%; font-size: 2em; margin-top: 12%; }
-  /* line 41, ../../dev/sass/_header.scss */
+  /* line 43, ../../dev/sass/_header.scss */
   .name .names { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; width: 35%; }
-  /* line 45, ../../dev/sass/_header.scss */
+  /* line 47, ../../dev/sass/_header.scss */
   .name .name--one { margin-right: 30%; text-align: right; }
-  /* line 49, ../../dev/sass/_header.scss */
-  .name .name--two { text-align: left; } }
-@media only screen and (min-width: 48em) { /* line 19, ../../dev/sass/_header.scss */
+  /* line 51, ../../dev/sass/_header.scss */
+  .name .name--two { text-align: left; font-size: 1em; } }
+@media only screen and (min-width: 48em) { /* line 20, ../../dev/sass/_header.scss */
   .name { font-size: 3em; margin-top: 7%; }
-  /* line 61, ../../dev/sass/_header.scss */
-  .name .names { width: 37.5%; }
   /* line 64, ../../dev/sass/_header.scss */
+  .name .names { width: 37.5%; }
+  /* line 67, ../../dev/sass/_header.scss */
   .name .name--one { margin-right: 25%; } }
-@media only screen and (min-width: 64em) { /* line 19, ../../dev/sass/_header.scss */
-  .name { font-size: 3.5em; margin-top: 4.5%; }
-  /* line 76, ../../dev/sass/_header.scss */
-  .name .names { width: 40%; }
+@media only screen and (min-width: 64em) { /* line 20, ../../dev/sass/_header.scss */
+  .name { font-size: 3em; margin-top: 4.5%; }
   /* line 79, ../../dev/sass/_header.scss */
+  .name .names { width: 40%; }
+  /* line 82, ../../dev/sass/_header.scss */
   .name .name--one { margin-right: 20%; } }
 
 /* line 1, ../../dev/sass/_nav.scss */
@@ -1700,7 +1736,7 @@ h2 { margin-bottom: 8px; }
   /* line 89, ../../dev/sass/_nav.scss */
   .topnav li a:hover { background-color: #00a5cc; color: white; }
   /* line 93, ../../dev/sass/_nav.scss */
-  .topnav li a:hover.current { background-color: white; } }
+  .topnav li a:hover.current { background-color: white; color: #ff005f; } }
 
 /* line 3, ../../dev/sass/_layout-duo.scss */
 .layout--duo.rev { direction: rtl; }
@@ -1744,12 +1780,27 @@ h2 { margin-bottom: 8px; }
   /* line 43, ../../dev/sass/_layout-trio.scss */
   .layout--trio .text { width: 38%; } }
 
-/* line 107, ../../dev/sass/main.scss */
+/* line 117, ../../dev/sass/main.scss */
 .svg-wrapper { position: relative; width: 100%; height: 0; overflow: hidden; }
-/* line 113, ../../dev/sass/main.scss */
+/* line 123, ../../dev/sass/main.scss */
 .svg-wrapper svg, .svg-wrapper iframe { position: absolute; top: 0; left: 0; }
-/* line 119, ../../dev/sass/main.scss */
+/* line 129, ../../dev/sass/main.scss */
 .svg-wrapper iframe { width: 100%; height: 100%; }
 
-/* line 125, ../../dev/sass/main.scss */
+/* line 135, ../../dev/sass/main.scss */
+.footer { position: relative; margin-top: 1.5em; padding-bottom: 24px; }
+/* line 142, ../../dev/sass/main.scss */
+.footer .wrap { max-width: 1024px; margin: 0 auto; padding: 0 24px; }
+/* line 148, ../../dev/sass/main.scss */
+.footer .box { background-color: rgba(0, 0, 0, 0.62); padding: 12px 24px 24px; margin-top: 24px; }
+/* line 153, ../../dev/sass/main.scss */
+.footer a { text-decoration: none; }
+
+/* line 158, ../../dev/sass/main.scss */
+.social { list-style: none; margin: 0; }
+
+/* line 163, ../../dev/sass/main.scss */
+.footer--subhead { max-width: 1024px; margin: 0 auto; }
+
+/* line 168, ../../dev/sass/main.scss */
 .debug { position: absolute; bottom: 0; right: 0; margin: 0 0.25em 0.25em 0; }
