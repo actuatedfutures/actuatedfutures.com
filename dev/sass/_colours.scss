@@ -1,0 +1,36 @@
+
+$red: #FF005F;
+$blue: #00A5CC;
+$grey: #2E5B66;
+$maroon: #9e0039;
+
+@mixin col-setup($name: "", $colour: "") {
+
+	.t-#{$name} { 
+        color: #{$colour};
+        &:link,
+        &:visited {color: #{$colour};}
+
+        .rule {
+            color:#{$colour};
+        }
+    }
+
+    .bg-#{$name} { background-color: #{$colour} }
+
+    svg {
+        text.#{$name} { fill:#{$colour} }
+        rect.#{$name} { fill:#{$colour} }
+        path.#{$name} { fill:#{$colour} }
+    }
+
+    .bd-#{$name} { border-color: #{$colour} }
+}
+
+// @include col-setup("yellow",$yellow);
+@include col-setup("red",$red);
+@include col-setup("blue",$blue);
+@include col-setup("grey",$grey);
+@include col-setup("maroon",$maroon);
+@include col-setup("white",#FFF);
+@include col-setup("black",#000);

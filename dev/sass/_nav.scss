@@ -2,16 +2,22 @@
 	margin-top:$bsu;
 	font-size:1.25em;
 	text-transform:uppercase;	
+	@extend .bg-grey;	
 
-	@include above(pem(1024))
+	@include above(pem(480))
 	{
 		margin-bottom:1.2em;
-	}	
+	}
 
 	// bg color on whole block (not individual items.)
 	.nav {
-		// background-color:rgba(black,1);
 		height:100%;
+		max-width:1042px;
+		margin:0 auto;
+		@include above(pem(480))
+		{
+			padding-top:$bsu/2;		
+		}	
 	}
 
 	// each link
@@ -23,14 +29,17 @@
 			text-decoration:none;
 			padding:0.5em;
 			border-bottom:1px solid white;			
-			color:white;
-			background-color:black;
+			@extend .t-blue;
 		}
 
 		&.current a {
 			background-color:white;
-			color:black;
-			box-shadow:0px 1px 0px 0px rgba(black,0.42) inset;
+			color:black;			
+			@extend .t-red;
+			@include above(pem(480))
+			{
+				box-shadow:0px 1px 0px 0px rgba(black,0.42) inset;
+			}
 		}
 		
 		&:last-child a {border:none}
@@ -52,7 +61,7 @@
 		max-height:51px;
 		@include single-transition(max-height 1s ease-out);
 
-		&:target {
+		&:target, &.show {
 			max-height:400px;
 			.menu {
 				display:none;
@@ -81,9 +90,9 @@
 				// @include single-transition(all 0.1s ease-out);
 				// border-right:1px solid rgba(white,0.42);		
 				&:hover {
-					background-color:rgba(black,0.42);
-					color:black;
-					box-shadow:0px 1px 0px 0px rgba(black,0.42) inset;
+					background-color:$blue;
+					color:white;
+					// box-shadow:0px 1px 0px 0px rgba(black,0.42) inset;
 				}
 			}
 		}

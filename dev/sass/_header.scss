@@ -1,16 +1,22 @@
 .header {
-	// padding-top:$bsu/4;
+	padding-top:$bsu/4;
 	// background-color:rgba(black,0.1);		
 
 	.logo {
-		display:block;		
-		width:100%;
-		height:0;		
-		background:transparent url(../img/logo.svg) no-repeat scroll center center;
-		background-size:contain;		
-		padding-top:42%;
-		@include above(pem(480)){padding-top:21%;}
-		@include above(pem(768)){padding-top:16%;}
+		width:20%;
+		margin:0 auto;
+		// display:block;		
+		// width:100%;
+		// height:0;		
+		// background:transparent url(../img/logo.svg) no-repeat scroll center center;
+		// background-size:contain;		
+		// padding-top:42%;
+		// @include above(pem(480)){padding-top:21%;}
+		// @include above(pem(768)){padding-top:16%;}
+		@include background(
+			// linear-gradient(left, $red 5%, $blue 95%)
+			radial-gradient(50% 10%, 100% 90%, $blue, $grey)
+		)
 	}
 }
 

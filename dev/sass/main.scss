@@ -2,6 +2,7 @@
 @import "compass/css3/inline-block";
 @import "compass/css3/transform";
 @import "compass/css3/transition";
+@import "compass/css3/images";
 
 // include normalize.
 @import "normalize-css/normalize";
@@ -25,15 +26,12 @@ $bsu:$base-line-height;
 $font-normal:300;
 $font-bold:700;
 
+@import "colours";
+
 body {
 	font-family: "Exo 2", sans-serif;
 	font-weight: $font-normal;
-	margin:$bsu/2;
-
-	@include above(pem(500))
-	{
-		margin:$bsu;
-	}
+	@extend .t-grey;
 
 	b,strong {
 		font-weight:$font-bold;
@@ -51,6 +49,7 @@ h2 {
 
 .text {
 	h2 {
+		@extend .t-blue;
 		font-size:2.5em;
 		line-height:1em;
 		margin-bottom:1.2em;
@@ -65,19 +64,35 @@ h2 {
 	}
 	p {
 		margin-bottom:1.5em;
+		strong {
+			@extend .t-blue;
+		}
 	}
 }
 
+a {@extend .t-blue;}
+a:hover {@extend .t-red;}
+
 .footer {
 	margin-top:1.5em;
-	background-color:rgba(black,0.22);
 	height:300px;	
+	@extend .bg-grey;
 }
 
 .res-image {display:block;}
 
 [class^="layout-"], [class*=" layout-"] {
 
+	margin:0 $bsu/2;	
+	max-width:1042px;
+	@include above(pem(480))
+	{
+		margin:0 $bsu;
+	}
+	@include above(pem(1024))
+	{
+		margin:0 auto;
+	}
 	.block {
 		@include inline-block();
 		vertical-align:top;
@@ -89,9 +104,23 @@ h2 {
 @import "layout-duo";
 @import "layout-trio";
 
+.svg-wrapper {
+    position:relative;
+    width:100%;
+    height:0;    
+    overflow:hidden;
 
+    svg, iframe {
+        position:absolute;
+        top:0;
+        left:0;
+    }
 
-
+    iframe {
+        width:100%;
+        height:100%;
+    }
+}
 
 .debug {
 	position:absolute;
