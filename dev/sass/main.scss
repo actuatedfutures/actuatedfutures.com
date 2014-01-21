@@ -9,7 +9,7 @@
 
 // vars for inuit.
 $use-nav:true;
-$use-grid:true;
+$use-grids:true;
 $base-line-height:24px;
 $bsu:$base-line-height;
 
@@ -73,13 +73,18 @@ h2 {
 a {@extend .t-blue;}
 a:hover {@extend .t-red;}
 
-.footer {
-	margin-top:1.5em;
-	height:300px;	
-	@extend .bg-grey;
-}
-
 .res-image {display:block;}
+
+[class^="icon-"], [class*=" icon-"] {
+
+	position:relative;
+	top:2px;
+	margin:0 0.5em 0 0;
+	
+	&.icon-right {
+		margin:0 0 0 0.5em;
+	}
+}
 
 [class^="layout-"], [class*=" layout-"] {
 
@@ -97,6 +102,11 @@ a:hover {@extend .t-red;}
 		@include inline-block();
 		vertical-align:top;
 	}
+}
+
+.cityback {
+	background:$grey url('../img/city-background.jpg') no-repeat fixed top center;
+	background-size:cover;
 }
 
 @import "header";
@@ -120,6 +130,39 @@ a:hover {@extend .t-red;}
         width:100%;
         height:100%;
     }
+}
+
+.footer {
+	position:relative;
+	margin-top:1.5em;
+	padding-bottom:$bsu;
+	@extend .bg-grey;
+	@extend .t-white;	
+	@extend .cityback;
+	.wrap {
+		@extend .cf;
+		max-width:1024px;
+		margin:0 auto;
+		padding:0 $bsu;	
+	}
+	.box {
+		background-color:rgba(black,0.62);
+		padding:$bsu/2 $bsu $bsu;
+		margin-top:$bsu;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+.social {
+	list-style:none;
+	margin:0;
+}
+
+.footer--subhead {
+	max-width:1024px;
+	margin:0 auto;
 }
 
 .debug {

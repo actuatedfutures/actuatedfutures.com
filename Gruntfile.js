@@ -73,7 +73,7 @@ module.exports = function(grunt) {
                 tasks: ['svg2png','svgmin']
             },
             imageoptim: {
-                files: ['<%= yeoman.build %>/img/**/*'],
+                files: ['<%= yeoman.dev %>/img/**/*'],
                 tasks: ['imageoptim:dist']
             }
 
@@ -254,7 +254,8 @@ module.exports = function(grunt) {
                     imageAlpha: true,
                     quitAfter: true
                 },
-                src: ['<%= yeoman.build %>/img/']
+                src: ['<%= yeoman.dev %>/img/']
+                // dest: ['<%= yeoman.build %>/img/']
             }
         },
 

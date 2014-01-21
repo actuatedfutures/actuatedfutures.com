@@ -15,4 +15,11 @@ $(document).on('ready', function()
 		e.preventDefault();
 		menu.removeClass('show');
 	});
+
+	$('.social .email a').each(function(i)
+	{
+		var name = $(this).text().split('[')[0];
+		$(this).text(name+'@actuatedfutures.com');
+		$(this).attr('href','mailto:'+name+'@actuatedfutures.com');
+	});
 });

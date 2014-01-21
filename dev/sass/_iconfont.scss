@@ -21,17 +21,8 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
-	position:relative;
-	top:0.1em;
 }
 
-.icon-left {
-	margin-right:0.25em;
-}
-.icon-right {
-	margin-left:0.25em;
-}
 .icon-home:before {
 	content: "\e600";
 }
@@ -49,4 +40,16 @@
 }
 .icon-menu:before {
 	content: "\e605";
+}
+.icon-twitter:before {
+	content: "\e606";
+}
+.icon-mail:before {
+	content: "\e607";
+}
+.icon-github:before {
+	content: "\e608";
+}
+.icon-phone:before {
+	content: "\e609";
 }

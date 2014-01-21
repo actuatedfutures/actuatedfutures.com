@@ -2,22 +2,19 @@
 	margin-top:$bsu;
 	font-size:1.25em;
 	text-transform:uppercase;	
-	@extend .bg-grey;	
+	@extend .cityback;
 
 	@include above(pem(480))
 	{
 		margin-bottom:1.2em;
 	}
 
-	// bg color on whole block (not individual items.)
+	// the whole block <ul>
 	.nav {
 		height:100%;
+		width:100%;
 		max-width:1042px;
-		margin:0 auto;
-		@include above(pem(480))
-		{
-			padding-top:$bsu/2;		
-		}	
+		margin:0 auto;	
 	}
 
 	// each link
@@ -55,7 +52,7 @@
 	}
 	
 	// mobile – control the hide/show of the menu
-	@include below(pem(481))
+	@include below(pem(479))
 	{
 		overflow:hidden;
 		max-height:51px;
@@ -80,7 +77,7 @@
 		.control {display:none}
 		.nav {
 			display:table;
-			width:100%;
+			padding:$bsu/2 $bsu 0 $bsu;	
 		}
 		li {
 			display:table-cell;
@@ -93,6 +90,10 @@
 					background-color:$blue;
 					color:white;
 					// box-shadow:0px 1px 0px 0px rgba(black,0.42) inset;
+					&.current {
+						background-color:white;
+						color:$red;
+					}
 				}
 			}
 		}
