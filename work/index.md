@@ -1,6 +1,7 @@
 ---
 layout: markdown
 title: Work
+image: http://placekitten.com/600/600
 ---
 
 ## Digital Homes With Actuate

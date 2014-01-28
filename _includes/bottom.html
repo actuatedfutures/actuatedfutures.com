@@ -1,6 +1,6 @@
 <footer class="footer">
 	<h2 class="footer--subhead">
-		<div class="svg-wrapper" style="padding-top:5.2%;">{% include futurecities-cutout.svg %}</div>
+		<div class="resp-wrap" style="padding-top:5.2%;">{% include futurecities-cutout.svg %}</div>
 	</h2>
 	<div class="wrap">
 		<div class="grid">
@@ -9,11 +9,11 @@
 					<h3 class="beta">Contact</h3>
 					<!-- <p>Get in touch we'd love to hear from you</p> -->
 					<ul class="social">
-					<li><span class="icon-phone"></span><a href="tel:+447833488697">+44 (0) 7833 488697</a></li>
+					<li class="phone"><span class="icon-phone"></span><a href="tel:+447833488697">+44 (0) 7833 488697</a></li>
 					<li class="email"><span class="icon-mail"></span><a>paul[at]actuatedfutures.com</a></li>
 					<li class="email"><span class="icon-mail"></span><a>phil[at]actuatedfutures.com</a></li>
 					<li class="email"><span class="icon-mail"></span><a>matt[at]actuatedfutures.com</a></li>
-					</ul>
+					</ul>					
 				</div>
 			</div><div class="grid__item lap-and-up-one-third">
 				<div class="box">
@@ -24,8 +24,22 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-	</div>
+			<div class="grid__item footer--lower">
+				<div class="box">				
+					<div class="vcard">
+						<p class="m-none">
+							<span class="street-address">Workspace 9, Greenhouse</span>,
+							<span class="street-address">Beeston Road</span>,
+							<span class="region">Leeds</span>,
+							<span class="postal-code">LS11 6AD</span>,
+							<span class="country-name">United Kingdom</span>	
+						</p>
+					</div><!-- .vcard -->
+					<div class="copy">&copy; Actuated Futures {{ site.time | date_to_long_string | split:" " | last }} </div>
+				</div><!-- .box -->
+			</div><!-- .grid_item -->
+		</div><!-- .grid -->
+	</div><!-- .wrap -->
 </footer>
 </body>
 </html>

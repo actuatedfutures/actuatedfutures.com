@@ -1,7 +1,3 @@
----
-layout: markdown
-title: About Us
----
 
 ## We’re a future cities company
 
