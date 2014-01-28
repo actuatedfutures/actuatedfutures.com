@@ -6,6 +6,9 @@ title: About The Team
 {% for member in site.data.team %}
 	{% capture id %}{{ member.name | downcase | remove:' '}}{% endcapture %}
 	<div class="layout--trio {% cycle '','rev' %}" id="{{ id }}">	
+
+		{% capture fig %}{{ member.image | truncate:7 }}{% endcapture %}		
+
 		<div class="block text first">
 	 		
 	 		<h2 class="m-less">{{ member.name }}</h2>
@@ -13,7 +16,15 @@ title: About The Team
 
 	 	</div><!-- --><div class="block square">
 			
-			<img src="{{member.image}}" width="100%" class="res-image" />
+			{% if fig == 'http...'%}
+
+				<img src="{{member.image}}" width="100%" class="res-image" />
+
+			{% else %}
+
+				<img src="{{site.url}}{{member.image}}" width="100%" class="res-image" />
+
+			{% endif %}
 
 		</div><!-- --><div class="block text second">
 
