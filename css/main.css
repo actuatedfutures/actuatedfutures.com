@@ -1658,45 +1658,45 @@ h2 { margin-bottom: 8px; }
 .m-none { margin-bottom: 0; }
 
 /* line 1, ../../dev/sass/_header.scss */
-.header { padding-top: 6px; }
-/* line 5, ../../dev/sass/_header.scss */
+.header { display: block; padding-top: 6px; cursor: pointer; text-decoration: none; }
+/* line 8, ../../dev/sass/_header.scss */
 .header .logo { width: 70%; margin: 0 auto; }
-@media only screen and (max-width: 30em) { /* line 5, ../../dev/sass/_header.scss */
+@media only screen and (max-width: 30em) { /* line 8, ../../dev/sass/_header.scss */
   .header .logo { max-width: 220px; } }
-@media only screen and (min-width: 30em) { /* line 5, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 30em) { /* line 8, ../../dev/sass/_header.scss */
   .header .logo { width: 25%; } }
-@media only screen and (min-width: 48em) { /* line 5, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 48em) { /* line 8, ../../dev/sass/_header.scss */
   .header .logo { width: 20%; } }
-@media only screen and (min-width: 64em) { /* line 5, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 64em) { /* line 8, ../../dev/sass/_header.scss */
   .header .logo { width: 15%; } }
 
-/* line 20, ../../dev/sass/_header.scss */
+/* line 23, ../../dev/sass/_header.scss */
 .name { text-transform: uppercase; text-align: center; font-size: 3em; font-weight: normal; line-height: 1; }
-/* line 28, ../../dev/sass/_header.scss */
+/* line 31, ../../dev/sass/_header.scss */
 .name .name--one { font-weight: 700; font-size: 0.95em; margin-top: 0.05em; }
-/* line 29, ../../dev/sass/_header.scss */
+/* line 32, ../../dev/sass/_header.scss */
 .name .name--two { font-size: 1.15em; }
-@media only screen and (max-width: 30em) { /* line 32, ../../dev/sass/_header.scss */
+@media only screen and (max-width: 30em) { /* line 35, ../../dev/sass/_header.scss */
   .name .names:before { content: ' '; display: inline; } }
-@media only screen and (min-width: 30em) { /* line 20, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 30em) { /* line 23, ../../dev/sass/_header.scss */
   .name { position: absolute; top: 0; left: 0; width: 100%; font-size: 2em; margin-top: 12%; }
-  /* line 43, ../../dev/sass/_header.scss */
+  /* line 46, ../../dev/sass/_header.scss */
   .name .names { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; width: 35%; }
-  /* line 47, ../../dev/sass/_header.scss */
+  /* line 50, ../../dev/sass/_header.scss */
   .name .name--one { margin-right: 30%; text-align: right; }
-  /* line 51, ../../dev/sass/_header.scss */
+  /* line 54, ../../dev/sass/_header.scss */
   .name .name--two { text-align: left; font-size: 1em; } }
-@media only screen and (min-width: 48em) { /* line 20, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 48em) { /* line 23, ../../dev/sass/_header.scss */
   .name { font-size: 3em; margin-top: 7%; }
-  /* line 64, ../../dev/sass/_header.scss */
-  .name .names { width: 37.5%; }
   /* line 67, ../../dev/sass/_header.scss */
+  .name .names { width: 37.5%; }
+  /* line 70, ../../dev/sass/_header.scss */
   .name .name--one { margin-right: 25%; } }
-@media only screen and (min-width: 64em) { /* line 20, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 64em) { /* line 23, ../../dev/sass/_header.scss */
   .name { font-size: 3em; margin-top: 4.5%; }
-  /* line 79, ../../dev/sass/_header.scss */
-  .name .names { width: 40%; }
   /* line 82, ../../dev/sass/_header.scss */
+  .name .names { width: 40%; }
+  /* line 85, ../../dev/sass/_header.scss */
   .name .name--one { margin-right: 20%; } }
 
 /* line 1, ../../dev/sass/_nav.scss */
@@ -1830,6 +1830,6 @@ h2 { margin-bottom: 8px; }
 /* line 66, ../../dev/sass/main.scss */
 .actions { padding-top: 1px; text-align: right; }
 /* line 70, ../../dev/sass/main.scss */
-.actions .button { padding: 24px; text-decoration: none; text-transform: uppercase; font-weight: 700; letter-spacing: 0.25em; -webkit-transition: background-color 2s; -moz-transition: background-color 2s; -o-transition: background-color 2s; transition: background-color 2s; }
+.actions .button { padding: 24px; text-decoration: none; text-transform: uppercase; font-weight: 700; letter-spacing: 0.25em; -webkit-transition: background-color 1s; -moz-transition: background-color 1s; -o-transition: background-color 1s; transition: background-color 1s; }
 /* line 80, ../../dev/sass/main.scss */
 .actions .button span { top: 0.25em; font-size: 1.5em; border-radius: 50%; padding: 5px 2px 5px 5px; -webkit-transition: color 0.5s; -moz-transition: color 0.5s; -o-transition: color 0.5s; transition: color 0.5s; }
