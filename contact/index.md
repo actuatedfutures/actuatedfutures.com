@@ -1,7 +1,7 @@
 ---
 layout: markdown
 title: About The Team
-image: http://placekitten.com/800/800
+image: http://placehold.it/800x800
 ---
 
 ## Contact us

@@ -1648,15 +1648,17 @@ h2 { margin-bottom: 8px; }
 
 /* line 6, ../../dev/sass/_typography.scss */
 .text h2 { font-size: 2.5em; line-height: 1em; margin-bottom: 1.2em; }
-/* line 13, ../../dev/sass/_typography.scss */
+/* line 11, ../../dev/sass/_typography.scss */
+.text h2.m-less { margin-bottom: 0.25em; }
+/* line 16, ../../dev/sass/_typography.scss */
 .text h3 { font-size: 1.5em; line-height: 1.2; margin-bottom: 2em; }
-/* line 19, ../../dev/sass/_typography.scss */
+/* line 22, ../../dev/sass/_typography.scss */
 .text p { margin-bottom: 1.5em; }
 
-/* line 27, ../../dev/sass/_typography.scss */
+/* line 30, ../../dev/sass/_typography.scss */
 .m-less { margin-bottom: 0.25em; }
 
-/* line 31, ../../dev/sass/_typography.scss */
+/* line 34, ../../dev/sass/_typography.scss */
 .m-none { margin-bottom: 0; }
 
 /* line 1, ../../dev/sass/_header.scss */
@@ -1792,16 +1794,16 @@ h2 { margin-bottom: 8px; }
 /* line 39, ../../dev/sass/main.scss */
 .cityback, .topnav, .footer { background: #2e5b66 url("../img/city-background.jpg") no-repeat fixed top center; background-size: cover; }
 
-/* line 51, ../../dev/sass/main.scss */
+/* line 52, ../../dev/sass/main.scss */
 .footer--lower { font-size: 1em; }
-/* line 54, ../../dev/sass/main.scss */
+/* line 55, ../../dev/sass/main.scss */
 .footer--lower .vcard { text-align: right; float: right; }
-/* line 60, ../../dev/sass/main.scss */
+/* line 61, ../../dev/sass/main.scss */
 .footer--lower .copy span { white-space: nowrap; }
 
-/* line 66, ../../dev/sass/main.scss */
+/* line 67, ../../dev/sass/main.scss */
 .actions { padding-top: 1px; text-align: right; }
-/* line 70, ../../dev/sass/main.scss */
+/* line 71, ../../dev/sass/main.scss */
 .actions .button { padding: 24px; text-decoration: none; text-transform: uppercase; font-weight: 700; letter-spacing: 0.25em; -webkit-transition: background-color 1s; -moz-transition: background-color 1s; -o-transition: background-color 1s; transition: background-color 1s; }
-/* line 80, ../../dev/sass/main.scss */
+/* line 81, ../../dev/sass/main.scss */
 .actions .button span { top: 0.25em; font-size: 1.5em; border-radius: 50%; padding: 5px 2px 5px 5px; -webkit-transition: color 0.5s; -moz-transition: color 0.5s; -o-transition: color 0.5s; transition: color 0.5s; }
