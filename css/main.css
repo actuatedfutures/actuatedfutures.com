@@ -1463,6 +1463,8 @@ label, .label { display: block; }
 ie8 and lower separate desktop stylesheet approach from here:
 http://jakearchibald.github.io/sass-ie/
 */
+/* Pixels to ems mixin from DBushell 
+*/
 @font-face { font-family: 'iconfont'; src: url("fonts/iconfont.eot"); src: url("fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("fonts/iconfont.woff") format("woff"), url("fonts/iconfont.ttf") format("truetype"), url("fonts/iconfont.svg#iconfont") format("svg"); font-weight: normal; font-style: normal; }
 
 /* line 12, ../../dev/sass/_iconfont.scss */
@@ -1637,15 +1639,21 @@ h2 { margin-bottom: 8px; }
 .debug { position: absolute; bottom: 0; right: 0; margin: 0 0.25em 0.25em 0; color: black; }
 
 /* line 4, ../../dev/sass/_responsive.scss */
-.resp-wrap { position: relative; width: 100%; height: 0; overflow: hidden; }
-/* line 10, ../../dev/sass/_responsive.scss */
+.resp-wrap { position: relative; width: 100%; height: 0; overflow: hidden; text-align: center; }
+/* line 11, ../../dev/sass/_responsive.scss */
 .resp-wrap svg, .resp-wrap iframe { position: absolute; top: 0; left: 0; }
-/* line 16, ../../dev/sass/_responsive.scss */
+/* line 17, ../../dev/sass/_responsive.scss */
 .resp-wrap iframe { width: 100%; height: 100%; }
-/* line 21, ../../dev/sass/_responsive.scss */
+/* line 22, ../../dev/sass/_responsive.scss */
 .text .resp-wrap { margin-bottom: 1em; }
 
-/* line 28, ../../dev/sass/_responsive.scss */
+/* line 27, ../../dev/sass/_responsive.scss */
+.resp-logo { padding-top: 75%; }
+
+/* line 31, ../../dev/sass/_responsive.scss */
+.resp-futurecities { padding-top: 5.2%; }
+
+/* line 37, ../../dev/sass/_responsive.scss */
 .res-image { display: block; }
 
 /* line 6, ../../dev/sass/_typography.scss */
@@ -1663,46 +1671,49 @@ h2 { margin-bottom: 8px; }
 /* line 34, ../../dev/sass/_typography.scss */
 .m-none { margin-bottom: 0; }
 
+/* line 34, ../../dev/sass/main.scss */
+.cityback, .topnav, .footer { background: #2e5b66 url("../img/city-background.jpg") repeat fixed center top; background-size: cover; }
+
 /* line 1, ../../dev/sass/_header.scss */
 .header { display: block; padding-top: 6px; cursor: pointer; text-decoration: none; }
-/* line 8, ../../dev/sass/_header.scss */
+/* line 7, ../../dev/sass/_header.scss */
 .header .logo { width: 70%; margin: 0 auto; }
-@media only screen and (max-width: 30em) { /* line 8, ../../dev/sass/_header.scss */
+@media only screen and (max-width: 30em) { /* line 7, ../../dev/sass/_header.scss */
   .header .logo { max-width: 220px; } }
-@media only screen and (min-width: 30em) { /* line 8, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 30em) { /* line 7, ../../dev/sass/_header.scss */
   .header .logo { width: 25%; } }
-@media only screen and (min-width: 48em) { /* line 8, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 48em) { /* line 7, ../../dev/sass/_header.scss */
   .header .logo { width: 20%; } }
-@media only screen and (min-width: 64em) { /* line 8, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 64em) { /* line 7, ../../dev/sass/_header.scss */
   .header .logo { width: 15%; } }
 
-/* line 23, ../../dev/sass/_header.scss */
+/* line 22, ../../dev/sass/_header.scss */
 .name { text-transform: uppercase; text-align: center; font-size: 3em; font-weight: normal; line-height: 1; }
-/* line 31, ../../dev/sass/_header.scss */
+/* line 30, ../../dev/sass/_header.scss */
 .name .name--one { font-weight: 700; font-size: 0.95em; margin-top: 0.05em; }
-/* line 32, ../../dev/sass/_header.scss */
+/* line 31, ../../dev/sass/_header.scss */
 .name .name--two { font-size: 1.15em; }
-@media only screen and (max-width: 30em) { /* line 35, ../../dev/sass/_header.scss */
+@media only screen and (max-width: 30em) { /* line 34, ../../dev/sass/_header.scss */
   .name .names:before { content: ' '; display: inline; } }
-@media only screen and (min-width: 30em) { /* line 23, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 30em) { /* line 22, ../../dev/sass/_header.scss */
   .name { position: absolute; top: 0; left: 0; width: 100%; font-size: 2em; margin-top: 12%; }
-  /* line 46, ../../dev/sass/_header.scss */
+  /* line 45, ../../dev/sass/_header.scss */
   .name .names { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; width: 35%; }
-  /* line 50, ../../dev/sass/_header.scss */
+  /* line 49, ../../dev/sass/_header.scss */
   .name .name--one { margin-right: 30%; text-align: right; }
-  /* line 54, ../../dev/sass/_header.scss */
+  /* line 53, ../../dev/sass/_header.scss */
   .name .name--two { text-align: left; font-size: 1em; } }
-@media only screen and (min-width: 48em) { /* line 23, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 48em) { /* line 22, ../../dev/sass/_header.scss */
   .name { font-size: 3em; margin-top: 7%; }
-  /* line 67, ../../dev/sass/_header.scss */
+  /* line 66, ../../dev/sass/_header.scss */
   .name .names { width: 37.5%; }
-  /* line 70, ../../dev/sass/_header.scss */
+  /* line 69, ../../dev/sass/_header.scss */
   .name .name--one { margin-right: 25%; } }
-@media only screen and (min-width: 64em) { /* line 23, ../../dev/sass/_header.scss */
+@media only screen and (min-width: 64em) { /* line 22, ../../dev/sass/_header.scss */
   .name { font-size: 3em; margin-top: 4.5%; }
-  /* line 82, ../../dev/sass/_header.scss */
+  /* line 81, ../../dev/sass/_header.scss */
   .name .names { width: 40%; }
-  /* line 85, ../../dev/sass/_header.scss */
+  /* line 84, ../../dev/sass/_header.scss */
   .name .name--one { margin-right: 20%; } }
 
 /* line 1, ../../dev/sass/_nav.scss */
@@ -1722,7 +1733,7 @@ h2 { margin-bottom: 8px; }
 /* line 42, ../../dev/sass/_nav.scss */
 .topnav li:last-child a { border: none; }
 /* line 44, ../../dev/sass/_nav.scss */
-.topnav li.control a { background-color: rgba(0, 0, 0, 0.42); }
+.topnav li.control a { background: black; background: rgba(0, 0, 0, 0.42); }
 /* line 50, ../../dev/sass/_nav.scss */
 .topnav .control.hide { display: none; }
 @media only screen and (max-width: 30em) { /* line 1, ../../dev/sass/_nav.scss */
@@ -1806,36 +1817,60 @@ h2 { margin-bottom: 8px; }
   /* line 113, ../../dev/sass/_layout.scss */
   .layout--trio .text { width: 38%; } }
 
-/* line 4, ../../dev/sass/_footer.scss */
+/* line 3, ../../dev/sass/_footer.scss */
 .footer { position: relative; margin-top: 1.5em; padding-bottom: 24px; }
-/* line 11, ../../dev/sass/_footer.scss */
+/* line 12, ../../dev/sass/_footer.scss */
 .footer .wrap { max-width: 1024px; margin: 0 auto; padding: 0 24px; }
-/* line 17, ../../dev/sass/_footer.scss */
-.footer .box { background-color: rgba(0, 0, 0, 0.62); padding: 12px 24px 24px; margin-top: 24px; }
-/* line 22, ../../dev/sass/_footer.scss */
+/* line 18, ../../dev/sass/_footer.scss */
+.footer .box { background: black; background: rgba(0, 0, 0, 0.62); padding: 12px 24px 24px; margin-top: 24px; }
+/* line 23, ../../dev/sass/_footer.scss */
 .footer a { text-decoration: none; }
-/* line 26, ../../dev/sass/_footer.scss */
+/* line 27, ../../dev/sass/_footer.scss */
 .footer .phone { margin-bottom: 12px; }
 
-/* line 33, ../../dev/sass/_footer.scss */
+/* line 34, ../../dev/sass/_footer.scss */
 .social { list-style: none; margin: 0; }
 
-/* line 40, ../../dev/sass/_footer.scss */
+/* line 41, ../../dev/sass/_footer.scss */
 .footer--subhead { max-width: 1024px; margin: 0 auto; }
 
-/* line 39, ../../dev/sass/main.scss */
-.cityback, .topnav, .footer { background: #2e5b66 url("../img/city-background.jpg") no-repeat fixed top center; background-size: cover; }
+/* line 3, ../../dev/sass/_lt-ie9.scss */
+.lt-ie9 body { background-color: #EEE; }
+/* line 6, ../../dev/sass/_lt-ie9.scss */
+.lt-ie9 .grid, .lt-ie9 .grid__item { display: block; width: 100%; margin: 0; padding: 0; }
+/* line 13, ../../dev/sass/_lt-ie9.scss */
+.lt-ie9 .topnav { display: block; margin-bottom: 24px; }
+/* line 17, ../../dev/sass/_lt-ie9.scss */
+.lt-ie9 .topnav .menu { display: none; }
+/* line 20, ../../dev/sass/_lt-ie9.scss */
+.lt-ie9 .topnav .nav { display: table; padding: 12px 0 0; }
+/* line 23, ../../dev/sass/_lt-ie9.scss */
+.lt-ie9 .topnav .nav a:hover { color: white; background: black; }
+/* line 28, ../../dev/sass/_lt-ie9.scss */
+.lt-ie9 .topnav li { display: table-cell; width: auto; }
+/* line 35, ../../dev/sass/_lt-ie9.scss */
+.lt-ie9 .name--one, .lt-ie9 .name--two { font-size: 1em; }
+/* line 37, ../../dev/sass/_lt-ie9.scss */
+.lt-ie9 .footer { display: block; padding-top: 1px; }
+/* line 42, ../../dev/sass/_lt-ie9.scss */
+.lt-ie9 .resp-wrap { height: auto; overflow: visible; display: block; padding-top: 0; }
 
-/* line 52, ../../dev/sass/main.scss */
+/* line 50, ../../dev/sass/_lt-ie9.scss */
+.ielte8-wrapper { width: 600px; margin: 0 auto; padding: 0 24px; background-color: white; }
+
+/* line 57, ../../dev/sass/_lt-ie9.scss */
+.browsehappy { text-align: center; margin: 0.25em; }
+
+/* line 56, ../../dev/sass/main.scss */
 .footer--lower { font-size: 1em; }
-/* line 55, ../../dev/sass/main.scss */
+/* line 59, ../../dev/sass/main.scss */
 .footer--lower .vcard { text-align: right; float: right; }
-/* line 61, ../../dev/sass/main.scss */
+/* line 65, ../../dev/sass/main.scss */
 .footer--lower .copy span { white-space: nowrap; }
 
-/* line 67, ../../dev/sass/main.scss */
-.actions { padding-top: 1px; text-align: right; }
 /* line 71, ../../dev/sass/main.scss */
+.actions { padding-top: 1px; text-align: right; }
+/* line 75, ../../dev/sass/main.scss */
 .actions .button { padding: 24px; text-decoration: none; text-transform: uppercase; font-weight: 700; letter-spacing: 0.25em; -webkit-transition: background-color 1s; -moz-transition: background-color 1s; -o-transition: background-color 1s; transition: background-color 1s; }
-/* line 81, ../../dev/sass/main.scss */
+/* line 85, ../../dev/sass/main.scss */
 .actions .button span { top: 0.25em; font-size: 1.5em; border-radius: 50%; padding: 5px 2px 5px 5px; -webkit-transition: color 0.5s; -moz-transition: color 0.5s; -o-transition: color 0.5s; transition: color 0.5s; }

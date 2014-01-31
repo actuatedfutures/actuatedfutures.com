@@ -1,6 +1,13 @@
 <footer class="footer">
 	<h2 class="footer--subhead">
-		<div class="resp-wrap" style="padding-top:5.2%;">{% include futurecities-cutout.svg %}</div>
+		<div class="resp-wrap resp-futurecities">
+			<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 980 50" overflow="visible" preserveAspectRatio="xMidYMin slice">
+				<switch>
+					{% include futurecities-cutout.svg %}
+					<foreignObject></foreignObject>
+				</switch>
+			</svg>
+		</div><!-- .resp-wrap -->
 	</h2>
 	<div class="wrap">
 		<div class="grid">
@@ -41,6 +48,7 @@
 		</div><!-- .grid -->
 	</div><!-- .wrap -->
 </footer>
+<!--[if lt IE 9]> </div> <![endif]-->
 {% include javascript.html %}
 </body>
 </html>
