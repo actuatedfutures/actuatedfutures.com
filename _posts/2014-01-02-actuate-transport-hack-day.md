@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Actuate Transport Hack Day - October 2013"
+layout: news
+title:  "Actuate Transport Hack Day"
 date:   2014-01-15 13:18:03
-categories: jekyll update
+categories: news
 ---
 
 As part of our development of the Actuate -  Digital Service that we have developed for CITU at Little Kelham, we needed to understand what people, who were going to live there, wanted from Actuate.

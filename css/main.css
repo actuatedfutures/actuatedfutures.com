@@ -1674,6 +1674,9 @@ h2 { margin-bottom: 8px; }
 /* line 34, ../../dev/sass/main.scss */
 .cityback, .topnav, .footer { background: #2e5b66 url("../img/city-background.jpg") repeat fixed center top; background-size: cover; }
 
+/* line 40, ../../dev/sass/main.scss */
+.sidebar .news { border-top: 1px solid #eee; padding-top: 12px; margin-top: 24px; }
+
 /* line 1, ../../dev/sass/_header.scss */
 .header { display: block; padding-top: 6px; cursor: pointer; text-decoration: none; }
 /* line 7, ../../dev/sass/_header.scss */
@@ -1861,16 +1864,16 @@ h2 { margin-bottom: 8px; }
 /* line 57, ../../dev/sass/_lt-ie9.scss */
 .browsehappy { text-align: center; margin: 0.25em; }
 
-/* line 56, ../../dev/sass/main.scss */
+/* line 62, ../../dev/sass/main.scss */
 .footer--lower { font-size: 1em; }
-/* line 59, ../../dev/sass/main.scss */
-.footer--lower .vcard { text-align: right; float: right; }
 /* line 65, ../../dev/sass/main.scss */
+.footer--lower .vcard { text-align: right; float: right; }
+/* line 71, ../../dev/sass/main.scss */
 .footer--lower .copy span { white-space: nowrap; }
 
-/* line 71, ../../dev/sass/main.scss */
+/* line 77, ../../dev/sass/main.scss */
 .actions { padding-top: 1px; text-align: right; }
-/* line 75, ../../dev/sass/main.scss */
-.actions .button { padding: 24px; text-decoration: none; text-transform: uppercase; font-weight: 700; letter-spacing: 0.25em; -webkit-transition: background-color 1s; -moz-transition: background-color 1s; -o-transition: background-color 1s; transition: background-color 1s; }
-/* line 85, ../../dev/sass/main.scss */
+/* line 81, ../../dev/sass/main.scss */
+.actions .button { display: block; text-align: left; padding: 24px; text-decoration: none; text-transform: uppercase; font-weight: 700; letter-spacing: 0.25em; line-height: 2; -webkit-transition: background-color 1s; -moz-transition: background-color 1s; -o-transition: background-color 1s; transition: background-color 1s; }
+/* line 94, ../../dev/sass/main.scss */
 .actions .button span { top: 0.25em; font-size: 1.5em; border-radius: 50%; padding: 5px 2px 5px 5px; -webkit-transition: color 0.5s; -moz-transition: color 0.5s; -o-transition: color 0.5s; transition: color 0.5s; }
