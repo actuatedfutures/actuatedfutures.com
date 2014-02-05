@@ -1,7 +1,7 @@
 ---
 layout: markdown
 title: Contact us
-image: http://placehold.it/800x800
+image: ../img/greenhouse.jpg
 ---
 
 ## Contact us

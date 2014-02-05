@@ -1,7 +1,7 @@
 ---
 layout: markdown
 title: Work
-image: http://placehold.it/600x600
+image: "../img/littlekelham.jpg"
 ---
 
 ## Digital Homes With Actuate
