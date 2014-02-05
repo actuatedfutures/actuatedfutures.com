@@ -1,7 +1,7 @@
-name: Your New Jekyll Site
+name: Actuated Futures
 markdown: redcarpet
 pygments: true
-url: http://actuatedfutures.github.io/actuatedfutures.com
+url: ""
 navigation:
 - text: about
   url: /
