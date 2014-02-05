@@ -1793,31 +1793,29 @@ h2 { margin-bottom: 8px; }
 @media only screen and (min-width: 31em) { /* line 67, ../../dev/sass/_layout.scss */
   .layout--duo .text { margin-bottom: 0; width: 62%; } }
 
-/* line 81, ../../dev/sass/_layout.scss */
-.layout--trio { margin-bottom: 24px; }
-/* line 88, ../../dev/sass/_layout.scss */
+/* line 86, ../../dev/sass/_layout.scss */
 .layout--trio .text, .layout--trio .square { width: 100%; }
-/* line 90, ../../dev/sass/_layout.scss */
+/* line 88, ../../dev/sass/_layout.scss */
 .layout--trio.rev { direction: rtl; }
-/* line 92, ../../dev/sass/_layout.scss */
+/* line 90, ../../dev/sass/_layout.scss */
 .layout--trio.rev .text, .layout--trio.rev .square { direction: ltr; }
-@media only screen and (min-width: 31em) { /* line 99, ../../dev/sass/_layout.scss */
+@media only screen and (min-width: 31em) { /* line 97, ../../dev/sass/_layout.scss */
   .layout--trio .first { width: 76%; padding: 0 0 0 24px; }
-  /* line 100, ../../dev/sass/_layout.scss */
+  /* line 98, ../../dev/sass/_layout.scss */
   .layout--trio .second { width: 0%; padding: 0 0 0 0; text-align: right; }
-  /* line 101, ../../dev/sass/_layout.scss */
+  /* line 99, ../../dev/sass/_layout.scss */
   .layout--trio .square { width: 24%; }
-  /* line 104, ../../dev/sass/_layout.scss */
+  /* line 102, ../../dev/sass/_layout.scss */
   .layout--trio.rev .first { padding: 0 24px 0 0; }
-  /* line 105, ../../dev/sass/_layout.scss */
+  /* line 103, ../../dev/sass/_layout.scss */
   .layout--trio.rev .second { padding: 0 0 0 0; text-align: left; } }
-@media only screen and (min-width: 48em) { /* line 111, ../../dev/sass/_layout.scss */
+@media only screen and (min-width: 48em) { /* line 109, ../../dev/sass/_layout.scss */
   .layout--trio .first { width: 52%; }
-  /* line 112, ../../dev/sass/_layout.scss */
+  /* line 110, ../../dev/sass/_layout.scss */
   .layout--trio .second { width: 14%; padding: 0 0 0 24px; }
-  /* line 113, ../../dev/sass/_layout.scss */
+  /* line 111, ../../dev/sass/_layout.scss */
   .layout--trio .square { width: 24%; }
-  /* line 116, ../../dev/sass/_layout.scss */
+  /* line 114, ../../dev/sass/_layout.scss */
   .layout--trio.rev .second { padding: 0 24px 0 0; } }
 
 /* line 3, ../../dev/sass/_footer.scss */
