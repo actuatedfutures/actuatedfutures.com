@@ -1,6 +1,6 @@
 - name: Paul Connel
   twitter: apulc
-  image: "http://placehold.it/270x270"
+  image: "../img/paul.jpg"
   link: "http://www.linkedin.com/in/paulcconnell"
   bio: "Paul is a founding partner of Actuated Futures combining his expertise in Innovation, Energy &amp; Technology within the context of Cities &amp; Urbanism, with the award wining developments of CITU.  For the last four years he has been working in the cross-cutting areas of Digital Urban Futures, Sustainable Cities and Energy at a Neighbourhood Scale.  Before that Paul was a Director at a global Environmental &amp; Energy Services Consultancy."
 
@@ -11,22 +11,23 @@
 
 - name: Matt Edgar
   twitter: mattedgar
-  image: "http://placehold.it/250x250"
+  image: "../img/matt.jpg"
   bio: "Matt is a consultant in service design, innovation and product management. For more than 15 years he worked in product strategy and design leadership in the amazing world of web and mobile media. Before that he was a newspaper journalist and history student."
   link: "http://mattedgar.com/"
 
 - name: Fraser Stride
   twitter: fraserstride
-  image: "http://placehold.it/270x270"
+  image: "../img/fraser.jpg"
   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis auctor feugiat. Maecenas imperdietnuncquis nisi eleifend, ut scelerisque turpis laoreet."
 
 - name: Phil Jefferies
   twitter: fraserstride
-  image: "http://placehold.it/203x203"
-  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis auctor feugiat. Maecenas imperdietnuncquis nisi eleifend, ut scelerisque turpis laoreet."
+  image: "../img/phil.jpg"
+  bio: "Phil is technical lead at Actuated Futures using his broad technical expertise across digital, electronics and physics to design the architecture and processes required to effectively digitally enable our future. For the last two years he has been working in the smart cities domain with Citu and the Met office. Before that Phil was Technical Director and Co-founder of Bloom Agency."
+  link: "http://www.linkedin.com/in/philjefferies"
 
 - name: Tom Morgan
   twitter: morganesque
   image: "../img/tom.jpg"
-  bio: "Tom is an interaction designer &amp; front-end developer. He's been designing and building things for the web since the turn of the century and is a  advocate of user-centered, iterative design practises and right now a huge fan of responsive web design."
+  bio: "Tom is an interaction designer &amp; front-end developer. He's been designing and building things on the web since the turn of the century and is a keen advocate of user-centered, iterative design practises. A avid fan of the open web he's currently delighted by responsive web design."
   link: "http://morganesque.com/"
