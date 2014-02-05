@@ -1,7 +1,6 @@
 ---
-layout: markdown
+layout: contact
 title: Contact us
-image: ../img/greenhouse.jpg
 ---
 
 ## Contact us

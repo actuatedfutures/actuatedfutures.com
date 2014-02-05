@@ -29,5 +29,5 @@
 - name: Tom Morgan
   twitter: morganesque
   image: "../img/tom.jpg"
-  bio: "Tom is an interaction designer &amp; front-end developer. He's been designing and building things on the web since the turn of the century and is a keen advocate of user-centered, iterative design practises. A avid fan of the open web he's currently delighted by responsive web design."
-  link: "http://morganesque.com/"
+  bio: "Tom is an interaction designer &amp; front-end developer. He's been designing and building things on the web since the turn of the century and is a keen advocate of user-centered &amp; iterative design practises. An avid fan of the open web he's currently delighted by responsive web design."
+  link: "http://morganesque.com"
