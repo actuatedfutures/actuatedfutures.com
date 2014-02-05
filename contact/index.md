@@ -8,7 +8,7 @@ image: ../img/greenhouse.jpg
 
 Let's talk. We're easy to find in all the usual places...
 
- * on the phone - call Paul [+44 (0) 7833 488697](tel:+447833488697)
+ * on the phone - call Paul Connell [+44 (0) 7833 488697](tel:+447833488697)
  * by email - [paul@actuatedfutures.com](mailto:paul@actuatedfutures.com)
  * on Twitter - we're [@actuatedfutures](https://twitter.com/actuatedfutures/)
  * by post - Workspace 9, Greenhouse, Beeston Road, Leeds, LS11 6AD, United Kingdom
