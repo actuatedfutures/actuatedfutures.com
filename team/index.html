@@ -7,7 +7,9 @@ title: About The Team
 	{% capture id %}{{ member.name | downcase | remove:' '}}{% endcapture %}
 	<div class="layout--trio {% cycle '','rev' %}" id="{{ id }}">	
 
-		<div class="block text square">
+		<div class="block text second">
+			
+		</div><!--  --><div class="block text square">
 	 		
 	 		<img src="{{member.image}}" width="100%" class="res-image" />
 
@@ -16,10 +18,8 @@ title: About The Team
 			<h2 class="m-less">{{ member.name }}</h2>
 	 		<p>{{ member.bio }}<br /><a href="{{member.link}}">{{member.link}}</a></p>	 						
 
-		</div><!-- --><div class="block text second">
-
-
-	 	</div>
+		</div>
+		
 	</div><!-- .layout trio -->
 {% endfor %}
 

@@ -7,10 +7,23 @@
  		{{ content }}
  	</div><!-- 
  --><div class="block square">
+ 		 		
  		<div class="resp-wrap" style="padding-top:100%">
-			<iframe width='100%' frameBorder='0' src='http://a.tiles.mapbox.com/v3/morganesque.h6l6feac/mm/zoompan.html'></iframe>
+ 			<div id="mapbox" style="position:absolute;top:0;bottom:0;width:100%;"></div>
+			<!-- <iframe id="mapbox" width='100%' frameBorder='0' src=''></iframe> -->	
 		</div>
 	</div>
  </div>
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+<script>
+	var map = L.mapbox.map('mapbox', 'morganesque.h6l6feac').setView([53.7839, -1.5463], 13);
+	map.scrollWheelZoom.disable();
+	map.markerLayer.eachLayer(function(marker)
+	{
+		console.log(marker);		
+	},this);		
+</script>
 
 {% include bottom.html %}
