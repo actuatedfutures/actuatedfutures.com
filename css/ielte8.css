@@ -1662,11 +1662,13 @@ h2 { margin-bottom: 8px; }
 .text h3 { font-size: 1.5em; line-height: 1.2; margin-bottom: 2em; }
 /* line 22, ../../dev/sass/_typography.scss */
 .text p { margin-bottom: 1.5em; }
+/* line 29, ../../dev/sass/_typography.scss */
+.text blockquote { background: rgba(46, 91, 102, 0.2); font-style: italic; padding: 36px; }
 
-/* line 30, ../../dev/sass/_typography.scss */
+/* line 37, ../../dev/sass/_typography.scss */
 .m-less { margin-bottom: 0.25em; }
 
-/* line 34, ../../dev/sass/_typography.scss */
+/* line 41, ../../dev/sass/_typography.scss */
 .m-none { margin-bottom: 0; }
 
 /* line 34, ../../dev/sass/main.scss */
