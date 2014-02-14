@@ -8,6 +8,7 @@ title: About The Team
 	</div>
 </div>
 
+<div class="the__team">
 {% for member in site.data.team %}
 	{% capture id %}{{ member.name | downcase | remove:' '}}{% endcapture %}
 	<div class="layout--trio {% cycle '','rev' %}" id="{{ id }}">	
@@ -27,6 +28,7 @@ title: About The Team
 		
 	</div><!-- .layout trio -->
 {% endfor %}
+</div><!-- .the__team -->
 
 <div class="layout--duo">	
 	<div class="block square">

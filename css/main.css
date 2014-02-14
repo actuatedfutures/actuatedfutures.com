@@ -1884,3 +1884,6 @@ h2 { margin-bottom: 8px; }
 .team__intro { margin: 48px auto 48px; padding: 0; }
 /* line 118, ../../dev/sass/main.scss */
 .team__intro .text { width: 100%; max-width: 760px; margin: 0 auto; display: block; text-align: center; }
+
+/* line 129, ../../dev/sass/main.scss */
+.the__team .rev .block.first { text-align: right; }
