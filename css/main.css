@@ -1785,7 +1785,7 @@ h2 { margin-bottom: 8px; }
 /* line 48, ../../dev/sass/_layout.scss */
 .layout--duo.rev { direction: rtl; }
 /* line 50, ../../dev/sass/_layout.scss */
-.layout--duo.rev > * { direction: ltr; text-align: right; }
+.layout--duo.rev > * { direction: ltr; }
 /* line 53, ../../dev/sass/_layout.scss */
 .layout--duo .square { direction: ltr; }
 @media only screen and (min-width: 31em) { /* line 53, ../../dev/sass/_layout.scss */
@@ -1802,7 +1802,7 @@ h2 { margin-bottom: 8px; }
 /* line 91, ../../dev/sass/_layout.scss */
 .layout--trio.rev { direction: rtl; }
 /* line 93, ../../dev/sass/_layout.scss */
-.layout--trio.rev > * { direction: ltr; text-align: right; }
+.layout--trio.rev > * { direction: ltr; }
 @media only screen and (min-width: 31em) { /* line 100, ../../dev/sass/_layout.scss */
   .layout--trio .first { width: 76%; padding: 0 0 0 24px; }
   /* line 101, ../../dev/sass/_layout.scss */
