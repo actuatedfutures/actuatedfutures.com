@@ -12,4 +12,4 @@ The show, part of [ISE](http://www.iseurope.org/home.php), focuses on the conver
 
 > People think that buildings need to get smarter and make automated  decisions on behalf of their occupants to reduce energy. At Greenhouse we proved that empowering the occupant with simple consumption information and  peer based comparison is fundamental to individuals taking ownership of  their energy reduction, and embedding it this ethos community as a whole.  It's a different way of thinking, and the ultimate success is reducing  carbon withing the built environment is about empowering people to make  people smart, not smart buildings.
 
-Find out more about the show on the [Smart Building Conference](http://www.smartbuildingconference.com/) website.
+Find out more on the [Smart Building Conference](http://www.smartbuildingconference.com/) website.
