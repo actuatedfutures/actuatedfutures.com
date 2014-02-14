@@ -4,11 +4,6 @@
   link: "http://www.linkedin.com/in/paulcconnell"
   bio: "Paul is a founding partner of Actuated Futures combining his expertise in Innovation, Energy &amp; Technology within the context of Cities &amp; Urbanism, with the award wining developments of CITU.  For the last four years he has been working in the cross-cutting areas of Digital Urban Futures, Sustainable Cities and Energy at a Neighbourhood Scale.  Before that Paul was a Director at a global Environmental &amp; Energy Services Consultancy."
 
-- name: Chris Thompson
-  twitter: christom
-  image: "http://placehold.it/230x230"
-  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis auctor feugiat. Maecenas imperdietnuncquis nisi eleifend, ut scelerisque turpis laoreet."
-
 - name: Matt Edgar
   twitter: mattedgar
   image: "../img/matt.jpg"
@@ -18,7 +13,7 @@
 - name: Fraser Stride
   twitter: fraserstride
   image: "../img/fraser.jpg"
-  bio: "Fraser is a partner of Citu, Actuated Futures' co-founding partner. At Citu, Fraser was responsible for the technology implementation at it's ground breaking Greenhouse development, featuring a MUSCO district energy system with tenant billing, energy management and monitoring. Prior to Citu, Fraser was a Director at Finite Solutions, the award winning high-end home technology company and served on the board at CEDIA (Custom Electronics Design and Installation Association). Fraser is FD at Citu and bring a wealth of financial, technology and property experience to the table."
+  bio: "Fraser is a partner of Citu, Actuated Futures' co-founding partner. At Citu, Fraser was responsible for the technology implementation at it's ground breaking Greenhouse development, featuring a MUSCO district energy system with tenant billing, energy management and monitoring. Prior to Citu, Fraser was a Director at Finite Solutions, the award winning high-end home technology company and served on the board at CEDIA (Custom Electronics Design and Installation Association)."
   link: "http://www.linkedin.com/in/fraserstride"
 
 - name: Phil Jefferies

@@ -1785,39 +1785,41 @@ h2 { margin-bottom: 8px; }
 /* line 48, ../../dev/sass/_layout.scss */
 .layout--duo.rev { direction: rtl; }
 /* line 50, ../../dev/sass/_layout.scss */
+.layout--duo.rev > * { direction: ltr; text-align: right; }
+/* line 53, ../../dev/sass/_layout.scss */
 .layout--duo .square { direction: ltr; }
-@media only screen and (min-width: 31em) { /* line 50, ../../dev/sass/_layout.scss */
+@media only screen and (min-width: 31em) { /* line 53, ../../dev/sass/_layout.scss */
   .layout--duo .square { width: 38%; margin-bottom: 0; padding: 0 0 0 24px; } }
-@media only screen and (min-width: 31em) { /* line 60, ../../dev/sass/_layout.scss */
+@media only screen and (min-width: 31em) { /* line 63, ../../dev/sass/_layout.scss */
   .layout--duo.rev .square { padding: 0 24px 0 0; } }
-/* line 67, ../../dev/sass/_layout.scss */
+/* line 70, ../../dev/sass/_layout.scss */
 .layout--duo .text { direction: ltr; margin-bottom: 24px; }
-@media only screen and (min-width: 31em) { /* line 67, ../../dev/sass/_layout.scss */
+@media only screen and (min-width: 31em) { /* line 70, ../../dev/sass/_layout.scss */
   .layout--duo .text { margin-bottom: 0; width: 62%; } }
 
-/* line 86, ../../dev/sass/_layout.scss */
+/* line 89, ../../dev/sass/_layout.scss */
 .layout--trio .text, .layout--trio .square { width: 100%; }
-/* line 88, ../../dev/sass/_layout.scss */
+/* line 91, ../../dev/sass/_layout.scss */
 .layout--trio.rev { direction: rtl; }
-/* line 90, ../../dev/sass/_layout.scss */
-.layout--trio.rev .text, .layout--trio.rev .square { direction: ltr; }
-@media only screen and (min-width: 31em) { /* line 97, ../../dev/sass/_layout.scss */
+/* line 93, ../../dev/sass/_layout.scss */
+.layout--trio.rev > * { direction: ltr; text-align: right; }
+@media only screen and (min-width: 31em) { /* line 100, ../../dev/sass/_layout.scss */
   .layout--trio .first { width: 76%; padding: 0 0 0 24px; }
-  /* line 98, ../../dev/sass/_layout.scss */
+  /* line 101, ../../dev/sass/_layout.scss */
   .layout--trio .second { width: 0%; padding: 0 0 0 0; text-align: right; }
-  /* line 99, ../../dev/sass/_layout.scss */
-  .layout--trio .square { width: 24%; }
   /* line 102, ../../dev/sass/_layout.scss */
-  .layout--trio.rev .first { padding: 0 24px 0 0; }
-  /* line 103, ../../dev/sass/_layout.scss */
-  .layout--trio.rev .second { padding: 0 0 0 0; text-align: left; } }
-@media only screen and (min-width: 48em) { /* line 109, ../../dev/sass/_layout.scss */
-  .layout--trio .first { width: 52%; }
-  /* line 110, ../../dev/sass/_layout.scss */
-  .layout--trio .second { width: 14%; padding: 0 0 0 24px; }
-  /* line 111, ../../dev/sass/_layout.scss */
   .layout--trio .square { width: 24%; }
+  /* line 105, ../../dev/sass/_layout.scss */
+  .layout--trio.rev .first { padding: 0 24px 0 0; }
+  /* line 106, ../../dev/sass/_layout.scss */
+  .layout--trio.rev .second { padding: 0 0 0 0; text-align: left; } }
+@media only screen and (min-width: 48em) { /* line 112, ../../dev/sass/_layout.scss */
+  .layout--trio .first { width: 52%; }
+  /* line 113, ../../dev/sass/_layout.scss */
+  .layout--trio .second { width: 14%; padding: 0 0 0 24px; }
   /* line 114, ../../dev/sass/_layout.scss */
+  .layout--trio .square { width: 24%; }
+  /* line 117, ../../dev/sass/_layout.scss */
   .layout--trio.rev .second { padding: 0 24px 0 0; } }
 
 /* line 3, ../../dev/sass/_footer.scss */
@@ -1877,3 +1879,8 @@ h2 { margin-bottom: 8px; }
 .actions .button { display: block; text-align: left; padding: 24px; text-decoration: none; text-transform: uppercase; font-weight: 700; letter-spacing: 0.25em; line-height: 2; -webkit-transition: background-color 1s; -moz-transition: background-color 1s; -o-transition: background-color 1s; transition: background-color 1s; }
 /* line 94, ../../dev/sass/main.scss */
 .actions .button span { top: 0.25em; font-size: 1.5em; border-radius: 50%; padding: 5px 2px 5px 5px; -webkit-transition: color 0.5s; -moz-transition: color 0.5s; -o-transition: color 0.5s; transition: color 0.5s; }
+
+/* line 113, ../../dev/sass/main.scss */
+.team__intro { margin: 48px auto 48px; padding: 0; }
+/* line 118, ../../dev/sass/main.scss */
+.team__intro .text { width: 100%; max-width: 760px; margin: 0 auto; display: block; text-align: center; }

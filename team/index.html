@@ -2,6 +2,11 @@
 layout: default
 title: About The Team
 ---
+<div class="layout--uno team__intro">
+	<div class="text">
+	<p>Actuated Futures was established in January 2013 as a partnership between Halcyon Innovation and Citu, an award winning zero-carbon property developer.</p>
+	</div>
+</div>
 
 {% for member in site.data.team %}
 	{% capture id %}{{ member.name | downcase | remove:' '}}{% endcapture %}
