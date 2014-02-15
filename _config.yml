@@ -1,7 +1,7 @@
 name: Actuated Futures
 markdown: redcarpet
 pygments: true
-url: "/actuatedfutures.com"
+url: ""
 navigation:
 - text: about
   url: /
