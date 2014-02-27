@@ -10,11 +10,6 @@
   bio: "Matt is a consultant in service design, innovation and product management. For more than 15 years he worked in product strategy and design leadership in the amazing world of web and mobile media. Before that he was a newspaper journalist and history student."
   link: "http://mattedgar.com/"
 
-- name: Citu
-  twitter: cituuk
-  image: "../img/greenhouse.jpg"
-  bio: "Citu is co-founding partner of Actuated Futures. Citu builds sustainable, mixed-use developments that are digitally enabled by the Actuate digital service. It has delivered over £40m of projects including the pioneering, low carbon Greenhouse. It has won 25+ awards including 2010 UK Green Building Council award for Best Refurbished Building."
-
 - name: Phil Jefferies
   twitter: fraserstride
   image: "../img/phil.jpg"
@@ -26,3 +21,8 @@
   image: "../img/tom.jpg"
   bio: "Tom is an interaction designer &amp; front-end developer. He's been designing and building things on the web since the turn of the century and is a keen advocate of user-centered &amp; iterative design practises. An avid fan of the open web he's currently specialising in responsive web design."
   link: "http://morganesque.com"
+
+- name: Citu
+  twitter: cituuk
+  image: "../img/greenhouse.jpg"
+  bio: "Citu is co-founding partner of Actuated Futures. Citu builds sustainable, mixed-use developments that are digitally enabled by the Actuate digital service. It has delivered over £40m of projects including the pioneering, low carbon Greenhouse. It has won 25+ awards including 2010 UK Green Building Council award for Best Refurbished Building."
